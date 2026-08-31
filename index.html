@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Hanshika ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💖</span>
+        <span>💘</span>
+        <span>💞</span>
+    </div>
+
+
+    <main class="container">
+
+
+        <!-- =========================
+             PAGE 1
+        ========================== -->
+
+        <div class="card" id="page1">
+
+            <!-- Cute animated dolls -->
+            <div class="cute-couple">
+
+                <div class="doll boy">
+                    <div class="hair"></div>
+                    <div class="face">
+                        <div class="eye left-eye"></div>
+                        <div class="eye right-eye"></div>
+                        <div class="smile"></div>
+                    </div>
+                    <div class="body"></div>
+                </div>
+
+                <div class="heart-between">
+                    ❤️
+                </div>
+
+                <div class="doll girl">
+                    <div class="hair"></div>
+                    <div class="face">
+                        <div class="eye left-eye"></div>
+                        <div class="eye right-eye"></div>
+                        <div class="smile"></div>
+                    </div>
+                    <div class="body"></div>
+                </div>
+
+            </div>
+
+
+            <p class="hello-text">
+                Hey Hanshika ❤️
+            </p>
+
+            <h1>
+                I have a very important question...
+            </h1>
+
+            <p class="subtitle">
+                Will you go on a date with me? 🥺
+            </p>
+
+
+            <div class="buttons">
+
+                <button id="yesBtn" onclick="sayYes()">
+                    Yes 💕
+                </button>
+
+                <button id="noBtn">
+                    No 😏
+                </button>
+
+            </div>
+
+
+            <p id="message"></p>
+
+        </div>
+
+
+
+        <!-- =========================
+             PAGE 2
+        ========================== -->
+
+        <section id="page2" class="page2">
+
+            <div class="page2-emoji">
+                🥰
+            </div>
+
+            <h2>
+                Yesss Hanshika! ❤️
+            </h2>
+
+            <p class="page2-subtitle">
+                I knew you couldn't resist Aman 😌
+                <br>
+                Now let's plan our date!
+                <br>
+                What do you want to do together?
+            </p>
+
+
+            <div class="activities">
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🏊
+                    <span>Swimming</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🍽️
+                    <span>Dinner</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🛍️
+                    <span>Shopping</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    ☕
+                    <span>Coffee</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🚶
+                    <span>Long Walk</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🍦
+                    <span>Ice Cream</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🌯
+                    <span>Subway</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🎬
+                    <span>Movie</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🎳
+                    <span>Bowling</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🌅
+                    <span>Sunset</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🎮
+                    <span>Gaming</span>
+                </button>
+
+                <button class="activity" onclick="selectActivity(this)">
+                    🍕
+                    <span>Pizza</span>
+                </button>
+
+            </div>
+
+
+            <p id="activityMessage">
+                Pick something... or pick everything 😌❤️
+            </p>
+
+
+            <button id="continueBtn" onclick="goToPage3()">
+                Continue 💕
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================
+             PAGE 3
+        ========================== -->
+
+        <section id="page3" class="page3">
+
+            <div class="page3-emoji">
+                🗓️
+            </div>
+
+            <h2>
+                When are you free, Hanshika? 🥰
+            </h2>
+
+            <p class="page3-subtitle">
+                Pick a date and time for our little adventure ❤️
+            </p>
+
+
+            <div class="date-time-box">
+
+                <div class="input-group">
+
+                    <label for="dateInput">
+                        📅 Date
+                    </label>
+
+                    <input type="date" id="dateInput">
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label for="timeInput">
+                        ⏰ Time
+                    </label>
+
+                    <input type="time" id="timeInput">
+
+                </div>
+
+            </div>
+
+
+            <p id="dateMessage">
+                Don't keep me waiting forever 😌❤️
+            </p>
+
+
+            <button id="dateContinueBtn" onclick="showFinalPage()">
+                Confirm Date 💕
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================
+             FINAL PAGE
+        ========================== -->
+
+        <section id="finalPage" class="final-page">
+
+            <div class="final-emoji">
+                🎉
+            </div>
+
+            <h2>
+                IT'S A DATE! ❤️
+            </h2>
+
+            <p class="final-subtitle">
+                Officially booked. 😌❤️
+            </p>
+
+
+            <div class="final-dolls">
+                🧑🏻‍❤️‍🧑🏻
+            </div>
+
+
+            <div class="date-summary">
+
+                <p>
+                    📅 <strong id="finalDate">Date</strong>
+                </p>
+
+                <p>
+                    ⏰ <strong id="finalTime">Time</strong>
+                </p>
+
+                <p>
+                    ❤️ <strong id="finalActivities">Our Date</strong>
+                </p>
+
+            </div>
+
+
+            <div class="funny-message">
+
+                <p>
+                    No cancellations allowed. 😌
+                </p>
+
+                <p>
+                    Refund policy:
+                    <strong>non-existent. 😂</strong>
+                </p>
+
+            </div>
+
+
+            <p class="final-message">
+                I can't wait to spend some time with you, Hanshika! ❤️
+                <br><br>
+                — Aman
+            </p>
+
+
+            <button id="reminderBtn" onclick="setReminder()">
+                🔔 Set a Reminder
+            </button>
+
+
+            <p id="reminderMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
