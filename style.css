@@ -7,7 +7,8 @@
 body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     background: linear-gradient(135deg, #ffd6e7, #ffeef5, #ffd1e1);
 
@@ -972,5 +973,191 @@ button {
     100% {
         transform: translateY(110vh) rotate(720deg);
         opacity: 0;
+    }
+}
+/* =========================
+   MOBILE SCROLL FIX 📱
+========================= */
+
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    min-height: 100vh;
+    height: auto;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    align-items: center;
+}
+
+
+/* Phones */
+
+@media (max-width: 600px) {
+
+    body {
+        display: block;
+        overflow-y: auto;
+    }
+
+    .container {
+        min-height: 100vh;
+        height: auto;
+
+        padding: 20px 12px 50px;
+
+        align-items: flex-start;
+    }
+
+    .card,
+    .page2,
+    .page3,
+    .final-page {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 10px auto 40px;
+    }
+
+    .page2,
+    .page3,
+    .final-page {
+        max-height: none;
+        overflow: visible;
+    }
+}
+/* =========================
+   MOBILE SCROLL FIX 📱
+========================= */
+
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    min-height: 100vh;
+    height: auto;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    align-items: center;
+}
+
+
+/* Phones */
+
+@media (max-width: 600px) {
+
+    body {
+        display: block;
+        overflow-y: auto;
+    }
+
+    .container {
+        min-height: 100vh;
+        height: auto;
+
+        padding: 20px 12px 50px;
+
+        align-items: flex-start;
+    }
+
+    .card,
+    .page2,
+    .page3,
+    .final-page {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 10px auto 40px;
+    }
+
+    .page2,
+    .page3,
+    .final-page {
+        max-height: none;
+        overflow: visible;
+    }
+}
+/* =========================
+   MOBILE SCROLL FIX 📱
+========================= */
+
+html {
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.container {
+    min-height: 100vh;
+    height: auto;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    align-items: center;
+}
+
+
+/* Phones */
+
+@media (max-width: 600px) {
+
+    body {
+        display: block;
+        overflow-y: auto;
+    }
+
+    .container {
+        min-height: 100vh;
+        height: auto;
+
+        padding: 20px 12px 50px;
+
+        align-items: flex-start;
+    }
+
+    .card,
+    .page2,
+    .page3,
+    .final-page {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 10px auto 40px;
+    }
+
+    .page2,
+    .page3,
+    .final-page {
+        max-height: none;
+        overflow: visible;
     }
 }
